@@ -29,6 +29,15 @@
     }
   }
 
+  &_b {
+    color: #000;
+    border: 1px solid #000;
+
+    &:after {
+      background-color: #000;
+    }
+  }
+
   span {
     @include anim(0.3s,0s);
     position: relative;
@@ -39,6 +48,10 @@
 
     &.btn_w {
       color: #000;
+    }
+
+    &.btn_b {
+      color: #fff;
     }
 
     &:after {
