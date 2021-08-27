@@ -73,6 +73,10 @@
 
   &__btn {
     margin: 0 0 60px 0;
+
+    @media screen and (max-width: $md3+px), screen and (max-height: 600px) {
+      margin: 0 0 30px 0;
+    }
   }
 
   &__arrow {
@@ -81,7 +85,7 @@
   }
 
   &__image {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -90,7 +94,7 @@
 
   @keyframes arrow {
     0% {top: 0}
-    50% {top: 20px}
+    50% {top: 10px}
     100% {top: 0}
   }
 }
